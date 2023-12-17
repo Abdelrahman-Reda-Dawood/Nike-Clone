@@ -1,10 +1,14 @@
-import { hamburger } from "../assets/icons"
-import { headerLogo } from "../assets/images"
-import { navLinks } from "../constants"
+import { hamburger } from '../assets/icons';
+import { headerLogo } from '../assets/images';
+import { navLinks } from '../constants';
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header
+      className="padding-x py-8 z-10 w-full fixed bg-slate-50 z-10"
+      data-aos="zoom-out"
+      data-aos-duration="3000"
+    >
       <nav className="flex justify-between items-center max-container">
         {/* Logo */}
         <a href="/">
@@ -39,7 +43,7 @@ const Nav = () => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

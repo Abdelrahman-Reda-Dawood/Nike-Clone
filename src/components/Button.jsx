@@ -8,6 +8,8 @@ const Button = ({
 }) => {
   return (
     <button
+      data-aos="fade-right"
+      data-aos-duration="3000"
       className={`flex justify-center rounded-full items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
     ${
       backgroundColor

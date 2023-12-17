@@ -1,5 +1,5 @@
-import ServiceCard from "../components/ServiceCard"
-import { services } from "../constants"
+import ServiceCard from '../components/ServiceCard';
+import { services } from '../constants';
 
 const Services = () => {
   return (
@@ -8,7 +8,7 @@ const Services = () => {
         <ServiceCard key={services.label} {...service} />
       ))}
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,5 +1,5 @@
-import Button from "../components/Button"
-import { shoe8 } from "../assets/images"
+import Button from '../components/Button';
+import { shoe8 } from '../assets/images';
 
 const SuperQuality = () => {
   return (
@@ -8,7 +8,11 @@ const SuperQuality = () => {
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       {/* Title, Text & Button */}
-      <div className="flex flex-1 flex-col">
+      <div
+        className="flex flex-1 flex-col"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
           We Provide You
           <span className="text-coral-red"> Super</span>
@@ -30,7 +34,11 @@ const SuperQuality = () => {
       </div>
 
       {/* Wrapper div for the image  */}
-      <div className="flex-1 flex justify-center items-center">
+      <div
+        className="flex-1 flex justify-center items-center"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+      >
         <img
           src={shoe8}
           alt="shoe8"
@@ -40,7 +48,7 @@ const SuperQuality = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SuperQuality
+export default SuperQuality;
